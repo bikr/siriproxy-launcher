@@ -1,0 +1,19 @@
+This plugin allows you to launch nearly any app on your mac.
+
+Required!****
+
+sudo gem install rb-appscript
+
+You must run the above to install appscript.  Once there you can use away.  
+
+Since this is WAY alpha, the keyphrase is: just <appname> please  
+
+This will likely change as development moves beyond simply launching apps..  
+
+Install:
+Simply add the following to your config.yml:  
+
+ - name: 'Spotify'
+   git: 'git://github.com/bikr/siriproxy-launcher.git'
+
+questions?  bikr@bikr.net
