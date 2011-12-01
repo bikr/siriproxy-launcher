@@ -6,7 +6,8 @@ sudo gem install rb-appscript
 
 You must run the above to install appscript.  Once there you can use away.  
 
-Since this is WAY alpha, the keyphrase is: just <appname> please  
+Listener modified to use  "open <appname>"   Cleaner..  Thanks creemerica! 
+ 
 
 This will likely change as development moves beyond simply launching apps..  
 
