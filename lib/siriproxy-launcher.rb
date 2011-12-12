@@ -27,13 +27,13 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
 listen_for /please fix my media center/i do
 	te = Appscript.app('iTunes')
 	if te.is_running?
-	say "Ok, I see iTunes is Running, I'll kill it now."
+#	say "Ok, I see iTunes is Running, I'll kill it now."
    	te.quit
 	sleep(1)
-	say "Ok, iTunes should have been killed, we'll wait a couple to make sure."
+#	say "Ok, iTunes should have been killed, we'll wait a couple to make sure."
 	sleep(2)
 end
-say "Ok, I am going to launch iTunes now."
+#say "Ok, I am going to launch iTunes now."
 te.launch
 sleep (1)
 say "OK, Things should be back to normal."
