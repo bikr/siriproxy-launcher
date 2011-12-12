@@ -32,6 +32,7 @@ listen_for /please fix my media center/i do
    	  te.launch
 	end
 say "OK, Things are back to normal."
+request_completed
 end
 
 
