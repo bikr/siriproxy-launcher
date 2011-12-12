@@ -33,10 +33,10 @@ listen_for /please fix my media center/i do
 	say "Ok, iTunes should have been killed, we'll wait a couple to make sure."
 	sleep(2)
 end
-say "Ok, now we'll relaunch iTunes."
+say "Ok, I am going to launch iTunes now."
 te.launch
 sleep (1)
-say "OK, Things are back to normal."
+say "OK, Things should be back to normal."
 request_completed
 end
 
