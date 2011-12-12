@@ -23,4 +23,16 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
  request_completed
  end
 
+
+listen_for /recycle (.*)/i do
+te = app('iTunes')
+if te.is_running?
+    te.quit
+    sleep(5)
+    te.launch
+end
+end
+
+
+
 end
