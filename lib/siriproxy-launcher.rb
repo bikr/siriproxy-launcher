@@ -29,8 +29,8 @@ listen_for /please fix my media center/i do
 	if te.is_running?
    	  te.quit
     	  sleep(5)
-   	  te.launch
 	end
+te.launch
 say "OK, Things are back to normal."
 request_completed
 end
