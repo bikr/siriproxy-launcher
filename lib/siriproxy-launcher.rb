@@ -31,6 +31,7 @@ if te.is_running?
     sleep(5)
     te.launch
 end
+say "OK, Things are back to normal."
 end
 
 
