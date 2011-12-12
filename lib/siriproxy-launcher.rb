@@ -25,12 +25,12 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
 
 
 listen_for /please fix/i do
-te = app('iTunes')
-if te.is_running?
-    te.quit
-    sleep(5)
-    te.launch
-end
+	te = Appscript.app('iTunes')
+	if te.is_running?
+   	  te.quit
+    	  sleep(5)
+   	  te.launch
+	end
 say "OK, Things are back to normal."
 end
 
