@@ -24,7 +24,7 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
  end
 
 
-listen_for /please fix/i do
+listen_for /please fix my media center/i do
 	te = Appscript.app('iTunes')
 	if te.is_running?
    	  te.quit
