@@ -23,13 +23,13 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
  request_completed
  end
 
-listen_for /siri jam (.*) /i do |playlist|
+listen_for /siri jam (.*)/i do |userAction|
  while userAction.empty? do
  userAction = ask "Which Playlist?"
  end
  
 `osascript -e 'tell application "iTunes"
-	play playlist "test"
+	play playlist "test"`
  end tell
  say "OK, I'll play that."
 request_completed
