@@ -27,8 +27,11 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
   while userAction.empty? do
   userAction = ask "Which Playlist?"
   end
- 
-`osascript -e 'tell application "iTunes" play user playlist "test"' -e 'tell application "iTunes" set view to current playlist'`
+it = Appscript.app("iTunes")
+it.playlists["Music"].play
+
+
+#osascript -e 'tell application "iTunes" play user playlist "test"' -e 'tell application "iTunes" set view to current playlist'`
  
  #end tell
  say "OK, I'll play that."
