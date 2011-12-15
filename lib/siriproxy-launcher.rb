@@ -23,6 +23,14 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
  request_completed
  end
 
+listen_for /siri jam (.*) /i do |playlist|
+ tell application "iTunes"
+	play playlist "test"
+ end tell
+ say "OK, I'll play that."
+request_completed
+end
+
 
 listen_for /please fix my media center/i do
 	te = Appscript.app('iTunes')
