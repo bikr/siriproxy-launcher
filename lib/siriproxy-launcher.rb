@@ -28,7 +28,7 @@ class SiriProxy::Plugin::Launcher < SiriProxy::Plugin
   userAction = ask "Which Playlist?"
   end
 it = Appscript.app("iTunes")
-it.playlists[userAction].play
+it.playlists[userAction.strip].play
 
 say "OK, I'll play that."
 request_completed
